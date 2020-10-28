@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>努力的Yong</title>
   
+  <subtitle>--编程爱好者</subtitle>
+  <link href="http://xxslog.top/atom.xml" rel="self"/>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
-  
-  <link href="http://example.com/"/>
+  <link href="http://xxslog.top/"/>
   <updated>2020-10-28T09:29:57.027Z</updated>
-  <id>http://example.com/</id>
+  <id>http://xxslog.top/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>努力的Yong</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2020/10/28/hello-world/"/>
-    <id>http://example.com/2020/10/28/hello-world/</id>
+    <link href="http://xxslog.top/2020/10/28/hello-world/"/>
+    <id>http://xxslog.top/2020/10/28/hello-world/</id>
     <published>2020-10-28T09:29:57.027Z</published>
     <updated>2020-10-28T09:29:57.027Z</updated>
     
