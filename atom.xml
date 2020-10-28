@@ -36,4 +36,210 @@
     
   </entry>
   
+  <entry>
+    <title>如何突破超星上锁的视频，强制进去学习任务点</title>
+    <link href="http://xxslog.top/2020/07/06/%E5%A6%82%E4%BD%95%E7%AA%81%E7%A0%B4%E8%B6%85%E6%98%9F%E4%B8%8A%E9%94%81%E7%9A%84%E8%A7%86%E9%A2%91%EF%BC%8C%E5%BC%BA%E5%88%B6%E8%BF%9B%E5%8E%BB%E5%AD%A6%E4%B9%A0%E4%BB%BB%E5%8A%A1%E7%82%B9/"/>
+    <id>http://xxslog.top/2020/07/06/%E5%A6%82%E4%BD%95%E7%AA%81%E7%A0%B4%E8%B6%85%E6%98%9F%E4%B8%8A%E9%94%81%E7%9A%84%E8%A7%86%E9%A2%91%EF%BC%8C%E5%BC%BA%E5%88%B6%E8%BF%9B%E5%8E%BB%E5%AD%A6%E4%B9%A0%E4%BB%BB%E5%8A%A1%E7%82%B9/</id>
+    <published>2020-07-06T10:01:51.000Z</published>
+    <updated>2020-10-28T14:02:40.997Z</updated>
+    
+    <content type="html"><![CDATA[<p><em><strong>相信每个人都应该知道，本学期的在线学习成绩占很大比例，我们约占50％，这是什么概念？ 这意味着您可以通过返校考试。 在线学习的大部分结果来自观看学习过程中的视频。 鉴于学习通（du）经常用尽，这会阻止我们进入学习，再加上老师在一段时间后锁定了视频，我们无法学习，为了省去找老师打开视频的麻烦，我决定自己做。 本文将告诉您如何解决此问题。</strong></em> </p><h2 id="1-获取课程重要两个参数"><a href="#1-获取课程重要两个参数" class="headerlink" title="1. 获取课程重要两个参数"></a>1. 获取课程重要两个参数</h2><p>进入课程，鼠标右键，选择<code>查看网页源代码</code></p><p><img src="https://ae01.alicdn.com/kf/H519183b14185402683726706f7eef4b3B.jpg" alt="2"></p><p>2.在新弹出来的页面进行查找(快捷键ctrl+F)，查找字段<code>moocId</code>（搜索不到请搜索<code>gv</code>或者直接搜索<code>classId</code>、<code>courseId</code>、<code>userId</code>)</p><p><img src="https://ae01.alicdn.com/kf/H752205810f2a4063a9cac1d395d57a07r.jpg" alt="3"></p><h2 id="2-获取更重要的参数"><a href="#2-获取更重要的参数" class="headerlink" title="2.获取更重要的参数"></a>2.获取更重要的参数</h2><p>找一个可以进去的任务点</p><p><img src="https://ae01.alicdn.com/kf/H5c72327bb36d409faaec17bbde0ea4e7E.jpg"></p><p>在这个页面按F12</p><p><img src="https://ae01.alicdn.com/kf/Hdc28590ef6a646fa811a9aade4dae841A.jpg"></p><p>认真看下图 好好看是如何获取 ‘curxxxxxxx’这个参数的</p><p><img src="https://ae01.alicdn.com/kf/H3f7c614ccd584933aa33a2ce8230e3a95.jpg"></p><h2 id="3-在console-输入含有上面三个参数的代码强制进入学习页面"><a href="#3-在console-输入含有上面三个参数的代码强制进入学习页面" class="headerlink" title="3.在console 输入含有上面三个参数的代码强制进入学习页面"></a>3.在console 输入含有上面三个参数的代码强制进入学习页面</h2><p><img src="https://ae01.alicdn.com/kf/Hd2383ad42e12400d8489890292999accH.jpg" alt="8"></p><p>在在图中所示位置输入<code>javascript:getTeacherAjax(&#39;你的courseId&#39;,&#39;你的classId&#39;,&#39;上图获得的cur后面的数字&#39;);</code>然后按回车，奇妙的事情发生了 我们已经进入上锁视频了，教程结束</p><p><img src="https://ae01.alicdn.com/kf/Hf9c186bd32d94c54b1e6f0122b0bdb8aX.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;em&gt;&lt;strong&gt;相信每个人都应该知道，本学期的在线学习成绩占很大比例，我们约占50％，这是什么概念？ 这意味着您可以通过返校考试。 在线学习的大部分结果来自观看学习过程中的视频。 鉴于学习通（du）经常用尽，这会阻止我们进入学习，再加上老师在一段时间后锁定了视频，我</summary>
+      
+    
+    
+    
+    <category term="web" scheme="http://xxslog.top/categories/web/"/>
+    
+    
+    <category term="WEB" scheme="http://xxslog.top/tags/WEB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用吾爱大神的软件实现校园助手自动打卡</title>
+    <link href="http://xxslog.top/2020/05/19/%E5%88%A9%E7%94%A8%E5%90%BE%E7%88%B1%E5%A4%A7%E7%A5%9E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%A0%A1%E5%9B%AD%E5%8A%A9%E6%89%8B%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/"/>
+    <id>http://xxslog.top/2020/05/19/%E5%88%A9%E7%94%A8%E5%90%BE%E7%88%B1%E5%A4%A7%E7%A5%9E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%A0%A1%E5%9B%AD%E5%8A%A9%E6%89%8B%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/</id>
+    <published>2020-05-19T07:51:39.000Z</published>
+    <updated>2020-10-28T14:02:40.983Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-声明："><a href="#1-声明：" class="headerlink" title="1.声明："></a>1.声明：</h2><p>软件来自 <a href="https://www.52pojie.cn/">吾爱</a> 一位大神 <a href="https://www.52pojie.cn/home.php?mod=space&uid=339746">CCStation</a></p><p>用到啦注入 所以一部分杀毒软件会误报毒</p><h2 id="2-准备："><a href="#2-准备：" class="headerlink" title="2.准备："></a>2.准备：</h2><p>1.<strong>微信助手V3</strong> 2.pc微信2.8.0版本</p><p>下载地址： 微信助手：<a href="https://yongee.lanzous.com/icsmu4b">https://yongee.lanzous.com/icsmu4b</a> 微信2.8.0：<a href="https://yongee.lanzous.com/icsmtzg">https://yongee.lanzous.com/icsmtzg</a></p><h2 id="3-步骤"><a href="#3-步骤" class="headerlink" title="3.步骤"></a>3.步骤</h2><p>在服务器安装微信后 登录上你的微信号 ，解压微信助手 打开后界面如图</p><p><img src="https://xxslog.top/wp-content/uploads/2020/05/1.jpg"></p><p>点击注入后</p><p><strong>最小化该程序！</strong> <strong>最小化该程序！</strong> <strong>最小化该程序！</strong></p><p>不要关闭 然后回到微信消息界面 按下键盘上Home键 会弹出程序 如图：</p><p><img src="https://xxslog.top/wp-content/uploads/2020/05/2.jpg"></p><p>点击 通讯录相关 —–&gt;刷新通讯录 ——–&gt;在公众号中找到要发送消息的号</p><p><img src="https://xxslog.top/wp-content/uploads/2020/05/3.jpg"></p><p>右击——&gt;将ID添加至发送选项卡。</p><p><img src="https://xxslog.top/wp-content/uploads/2020/05/4.jpg"></p><p>点击—定时消息 如图设定</p><p><img src="https://xxslog.top/wp-content/uploads/2020/05/5.jpg"></p><p>然后挂在服务器就 欧克啦</p><p>再次感谢 吾爱大神 <a href="https://www.52pojie.cn/home.php?mod=space&uid=339746">CCStation</a></p><h2 id="4-调试bug"><a href="#4-调试bug" class="headerlink" title="4.调试bug"></a>4.调试bug</h2><p>如果你要发送的人不在消息列表 微信会闪退 所以要先把它放进消息列表中哦！！！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;1-声明：&quot;&gt;&lt;a href=&quot;#1-声明：&quot; class=&quot;headerlink&quot; title=&quot;1.声明：&quot;&gt;&lt;/a&gt;1.声明：&lt;/h2&gt;&lt;p&gt;软件来自 &lt;a href=&quot;https://www.52pojie.cn/&quot;&gt;吾爱&lt;/a&gt; 一位大神 &lt;a href</summary>
+      
+    
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用云函数实现定时自动学习通签到</title>
+    <link href="http://xxslog.top/2020/05/14/%E5%88%A9%E7%94%A8%E4%BA%91%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E8%87%AA%E5%8A%A8%E5%AD%A6%E4%B9%A0%E9%80%9A%E7%AD%BE%E5%88%B0/"/>
+    <id>http://xxslog.top/2020/05/14/%E5%88%A9%E7%94%A8%E4%BA%91%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E8%87%AA%E5%8A%A8%E5%AD%A6%E4%B9%A0%E9%80%9A%E7%AD%BE%E5%88%B0/</id>
+    <published>2020-05-14T07:10:58.000Z</published>
+    <updated>2020-10-28T14:02:40.971Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>工具</strong>：腾讯云–云函数 （免费的额度就够用啦）</p><p><strong>代码</strong>：一会会用到</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf8 -*-</span><br><span class="line">import json</span><br><span class="line">import requests</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main_handler(event, context):</span><br><span class="line">    data &#x3D; &#123;</span><br><span class="line">        &#39;username&#39;: &#39;xxxxxxxxx&#39;, # 填写你的用户名</span><br><span class="line">        &#39;password&#39;: &#39;xxxxxxxxxx&#39;, # 填写你的密码</span><br><span class="line">        &#39;schoolid&#39;: &#39;&#39;, # 这个是学校id，学号登录才填写，手机登录空着就行</span><br><span class="line">        &#39;sckey&#39;: &#39;xxxxxxxxxxx&#39; # 如需签到消息微信推送，则填写server酱key</span><br><span class="line">    &#125;</span><br><span class="line">    r &#x3D; requests.post(&#39;http:&#x2F;&#x2F;101.89.182.58:9090&#x2F;sign&#39;, params&#x3D;data)</span><br><span class="line">    print(r.text)</span><br><span class="line">    return r.text</span><br></pre></td></tr></table></figure><h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>登录腾讯云，找到云函数项目</p><p>直达链接 <a href="https://console.cloud.tencent.com/scf/list?rid=5&ns=default">https://console.cloud.tencent.com/scf/list?rid=5&amp;ns=default</a></p><p>如果之前没有开通过，开通就行了，都是免费的</p><h2 id="创建一个新的云函数"><a href="#创建一个新的云函数" class="headerlink" title="创建一个新的云函数"></a><strong>创建一个新的云函数</strong></h2><p>创建一个云函数， 选择<strong>香港节点</strong>，因为学习通屏蔽了腾讯阿里的ip运行环境 Python3.6，下一步填入Python代码删除其中所有的代码，换成咱们的代码。</p><p>然后保存。</p><h2 id="添加触发方式"><a href="#添加触发方式" class="headerlink" title="添加触发方式"></a>添加触发方式</h2><p>打开函数服务，找到刚才我们新建的云函数然后选择触发方式</p><p>填写对应内容触发自定义周期，方便大家填写直接复制下面这个就行了</p><p>0 */1 8-22 * * * * 表示每天 早上8点到晚上22点之间，每1分钟签到一次不建议30s签到一次，触发频率太高可能引起异常完成上述操作后，然后就可以全自动签到，但是签到成功与否，要么查看云函数执行函数，要么登录学习通，查看课程是否真的签到成功。</p><blockquote><p><strong>（附加功能）</strong></p></blockquote><h2 id="签到完成后微信推送消息"><a href="#签到完成后微信推送消息" class="headerlink" title="签到完成后微信推送消息"></a>签到完成后微信推送消息</h2><p>可以使用server酱，配合server酱，可以将签到消息，推送至你的微信。</p><p>打开 server酱 <a href="http://sc.ftqq.com/3.version">http://sc.ftqq.com/3.version</a></p><p>登录需要github账户 自行注册</p><p>绑定你的微信后 在发送消息页面会有 你的<a href="http://sc.ftqq.com/?c=code">SCKEY</a> 将 <a href="http://sc.ftqq.com/?c=code">SCKEY</a> 填到代码填写server酱key的那行就可以啦</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;工具&lt;/strong&gt;：腾讯云–云函数 （免费的额度就够用啦）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;代码&lt;/strong&gt;：一会会用到&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter</summary>
+      
+    
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>we learn刷课</title>
+    <link href="http://xxslog.top/2020/05/13/we-learn%E5%88%B7%E8%AF%BE/"/>
+    <id>http://xxslog.top/2020/05/13/we-learn%E5%88%B7%E8%AF%BE/</id>
+    <published>2020-05-13T13:05:39.000Z</published>
+    <updated>2020-10-28T14:02:40.964Z</updated>
+    
+    <content type="html"><![CDATA[<p>直接上连接 <a href="https://yongee.lanzous.com/icl3rtc">https://yongee.lanzous.com/icl3rtc</a></p><p>全部刷完基本1分钟</p><p><img src="https://xxslog.top/wp-content/uploads/2020/05/QQ%E6%88%AA%E5%9B%BE20200513210412.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;直接上连接 &lt;a href=&quot;https://yongee.lanzous.com/icl3rtc&quot;&gt;https://yongee.lanzous.com/icl3rtc&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;全部刷完基本1分钟&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://xxslo</summary>
+      
+    
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>免流脚本【已失效】</title>
+    <link href="http://xxslog.top/2020/04/21/%E5%85%8D%E6%B5%81%E8%84%9A%E6%9C%AC/"/>
+    <id>http://xxslog.top/2020/04/21/%E5%85%8D%E6%B5%81%E8%84%9A%E6%9C%AC/</id>
+    <published>2020-04-21T02:42:51.000Z</published>
+    <updated>2020-10-28T14:02:40.959Z</updated>
+    
+    <content type="html"><![CDATA[<p>请尊重作者，支持正版。</p><p>OpenVPN免流凉的差不多了，但是这些东西还是挺有纪念价值的。</p><p>所以就鼓捣了一下，综合了所以的脚本。</p><p>更新：</p><p>修改了下载源失效问题</p><h4 id="截图："><a href="#截图：" class="headerlink" title="截图："></a>截图：</h4><p><img src="https://oss.osuu.net/uploads/2019/05/9YDJ83AF5IOCAEPYLHSXW-300x181.png" alt="免流流控破解脚本 FAS 青云 快云 VPNS 博雅dalo最新集合"></p><h4 id="一键脚本："><a href="#一键脚本：" class="headerlink" title="一键脚本："></a>一键脚本：</h4><p>yum -y install wget;wget down.osuu.net/op/vpn; bash vpn</p><h4 id="破解特点："><a href="#破解特点：" class="headerlink" title="破解特点："></a><strong>破解特点：</strong></h4><p>1.资源本地化</p><p>2.永久免费</p><p>3.青云/FAS/快云/VPNS/博雅dalo等</p><h4 id="开UDP68端口代码：-所有流控适用"><a href="#开UDP68端口代码：-所有流控适用" class="headerlink" title="开UDP68端口代码：(**所有流控适用)**"></a><strong>开UDP68端口代码：(**所有流控适用</strong>)**</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -t nat -A PREROUTING -p udp --dport 68 -j REDIRECT --to-ports 53 &amp;&amp; service iptables save</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;请尊重作者，支持正版。&lt;/p&gt;
+&lt;p&gt;OpenVPN免流凉的差不多了，但是这些东西还是挺有纪念价值的。&lt;/p&gt;
+&lt;p&gt;所以就鼓捣了一下，综合了所以的脚本。&lt;/p&gt;
+&lt;p&gt;更新：&lt;/p&gt;
+&lt;p&gt;修改了下载源失效问题&lt;/p&gt;
+&lt;h4 id=&quot;截图：&quot;&gt;&lt;a href=&quot;#截图：</summary>
+      
+    
+    
+    
+    <category term="uncategorized" scheme="http://xxslog.top/categories/uncategorized/"/>
+    
+    
+    <category term="其他" scheme="http://xxslog.top/tags/%E5%85%B6%E4%BB%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>We Learn 自动学习挂时长</title>
+    <link href="http://xxslog.top/2020/03/26/we-learn-%E8%87%AA%E5%8A%A8%E5%AD%A6%E4%B9%A0%E6%8C%82%E6%97%B6%E9%95%BF/"/>
+    <id>http://xxslog.top/2020/03/26/we-learn-%E8%87%AA%E5%8A%A8%E5%AD%A6%E4%B9%A0%E6%8C%82%E6%97%B6%E9%95%BF/</id>
+    <published>2020-03-26T08:19:15.000Z</published>
+    <updated>2020-10-28T14:02:40.945Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://xxslog.top/wp-content/uploads/2020/03/QQ%E6%88%AA%E5%9B%BE20200326160455.jpg"></p><p>首先，说明一下 这个教程只能全自动挂时长，不能自动答题。</p><p>为什么说自动挂时长？ 在电脑端也好，手机端也好，如果你只挂着答题页面，半个小时没有任何操作就会自动停止学习。</p><p>如果有一台挂机宝开着学习页面 ，再加上自动翻页操作的代码 ，那可就不用每半个小时内就要自己手动操作一下？ 省心啊！！</p><p>教程如下：</p><p>一、准备：</p><p>1.至于挂机宝要不要求看自己需求 （可以用自己的电脑代替，只不过这样会占用自己电脑的资源）</p><p>2.谷歌浏览器</p><p>3.代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">setInterval(function working()&#123;</span><br><span class="line">NextSCO();</span><br><span class="line">&#125;,1000*60*1);</span><br><span class="line">#每一分钟翻一页</span><br></pre></td></tr></table></figure><p>二、使用代码，实战操作。</p><p>打开随行课堂（we learn）学习页面</p><p><img src="https://xxslog.top/wp-content/uploads/2020/03/QQ%E6%88%AA%E5%9B%BE20200326161340-1024x421.jpg"></p><p>按下F12 弹出后 选择Console</p><p><img src="https://xxslog.top/wp-content/uploads/2020/03/QQ%E5%9B%BE%E7%89%8720200326161611.png"></p><p>粘贴代码 按下回车</p><p><img src="https://xxslog.top/wp-content/uploads/2020/03/1.jpg"></p><p>根据自己的情况修改翻页时间</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1000*60*1 &#x2F;&#x2F;一分钟一次翻页</span><br><span class="line">1000*60*2 &#x2F;&#x2F;二分钟二次翻页</span><br><span class="line">1000*60*3 &#x2F;&#x2F;三分钟三次翻页</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://xxslog.top/wp-content/uploads/2020/03/QQ%E6%88%AA%E5%9B%BE20200326160455.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;首先，说明一下 这个教程只能全自动挂时长，不能自动答题。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何自动作答u校园的题？</title>
+    <link href="http://xxslog.top/2020/03/26/%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E4%BD%9C%E7%AD%94u%E6%A0%A1%E5%9B%AD%E7%9A%84%E9%A2%98%EF%BC%9F/"/>
+    <id>http://xxslog.top/2020/03/26/%E5%A6%82%E4%BD%95%E8%87%AA%E5%8A%A8%E4%BD%9C%E7%AD%94u%E6%A0%A1%E5%9B%AD%E7%9A%84%E9%A2%98%EF%BC%9F/</id>
+    <published>2020-03-26T07:57:04.000Z</published>
+    <updated>2020-10-28T14:02:40.936Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://xxslog.top/wp-content/uploads/2020/03/QQ%E6%88%AA%E5%9B%BE20200326155410.jpg"></p><p>U校园作为大学生最“爱”的软件之一，即便你有答案，粘贴复制也要半天才能做完</p><p>使用脚本可以实现自动答题功能。</p><p>操作步骤如下：</p><p>1。电脑上安装啦Chrome浏览器或者360极速浏览器之一</p><p><img src="https://xxslog.top/wp-content/uploads/2020/03/QQ%E6%88%AA%E5%9B%BE20200326154433.jpg"></p><p>2.以谷歌 Chrome浏览器 为例安装油猴插件（详细安装步骤省略）</p><p>不会的可以看 <a href="https://blog.csdn.net/weixin_42150650/article/details/87284786">https://blog.csdn.net/weixin_42150650/article/details/87284786</a></p><p>3.安装好油猴插件后，打开下面连接 ， 然后后点击安装</p><p><a href="https://greasyfork.org/zh-CN/scripts/397517-uer-u%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%AF%BE%E7%AD%94%E6%A1%88%E6%98%BE%E7%A4%BA-%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%A5-%E6%94%AF%E6%8C%81utalk">https://greasyfork.org/zh-CN/scripts/397517-uer-u%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%AF%BE%E7%AD%94%E6%A1%88%E6%98%BE%E7%A4%BA-%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%A5-%E6%94%AF%E6%8C%81utalk</a></p><p>默认是开启自动答题的功能的</p><p>最后，直接可以打开u校园的答题界面 直接浪啦</p><p>见图：</p><p><img src="https://xxslog.top/wp-content/uploads/2020/03/QQ%E6%88%AA%E5%9B%BE20200326155331-1024x513.jpg"></p><p>注意：1.有一些题不支持搜索 所以没有出现答案窗口 需要我们手动作答。2.目前不支持单元测试题。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://xxslog.top/wp-content/uploads/2020/03/QQ%E6%88%AA%E5%9B%BE20200326155410.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;U校园作为大学生最“爱”的软件之一，即便你有答案，粘贴复制也要半天</summary>
+      
+    
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何实现微信服务号自动打卡</title>
+    <link href="http://xxslog.top/2019/12/28/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%8F%B7%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/"/>
+    <id>http://xxslog.top/2019/12/28/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%8F%B7%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/</id>
+    <published>2019-12-28T06:27:47.000Z</published>
+    <updated>2020-10-28T14:02:40.922Z</updated>
+    
+    <content type="html"><![CDATA[<p>准备：1.可以实现网页vnc控制的一台服务器；2.按键精灵；3.微信 pc版。</p><p><img src="http://blogs.cti3c.cn/wp-content/uploads/2019/12/1.png"></p><p>打开服务器的控制面板，然后安装好按键精灵后，简单地录制一下打卡过程</p><p><img src="http://blogs.cti3c.cn/wp-content/uploads/2019/12/%E6%8C%89%E9%94%AE1.png"></p><p>然后将录制的脚本 ， 进行循环运行 ，</p><p>do</p><p>录制的内容！</p><p>延迟24小时</p><p>loop</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;准备：1.可以实现网页vnc控制的一台服务器；2.按键精灵；3.微信 pc版。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://blogs.cti3c.cn/wp-content/uploads/2019/12/1.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;打开服务器的控制面板，然后安装好</summary>
+      
+    
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+    
+    <category term="小技巧" scheme="http://xxslog.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
 </feed>

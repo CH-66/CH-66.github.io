@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><title>利用云函数实现定时自动学习通签到</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1"><meta name="description" content="一个编程爱好者，喜欢python、JavaScript，C++,安卓逆向，前端开发的个人blog"><meta name="keywords"><meta name="author" content="努力的Yong"><link rel="short icon" href="/images/favicon.png"><link rel="icon" href="/images/favicon.png"><!--[if lt IE 9]>
+<script src="/js/modernizr.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="/css/iconfont.css">
+
+<link rel="stylesheet" href="/css/index.css?v=202010282206.css">
+<link rel="stylesheet" href="/css/info.css?v=202010282206.css">
+<link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/github.min.css" rel="stylesheet"><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="努力的Yong" type="application/atom+xml">
+</head><body><header id="header" class="header-navigation"><nav><div class="logo"><a href="http://xxslog.top">努力的Yong</a></div><h2 id="mnavh"><span class="navicon"></span></h2><ul id="starlist"><li><a href="/">首页</a></li><li><a href="/time.html">时间轴</a></li></ul><div class="searchbox"><div id="search_bar" class="search_bar"><input id="keyboard" placeholder="想搜点什么呢.." type="text" name="keyboard" autocomplete="off" class="input"><p class="search_ico"><span></span></p></div></div></nav></header><article><main><div class="con_warp"><div class="infosbox"><div class="newsview"><h3 class="news_title">利用云函数实现定时自动学习通签到</h3><div class="bloginfo"><ul><li class="author">作者：<a href="/">努力的Yong</a></li><li class="lmname"><a href="/">小技巧</a></li><li class="timer">时间：2020-05-14 15:10:58</li><li class="view"><span id="busuanzi_value_page_pv">99</span><span>次访问</span></li></ul></div><div class="tags"><a href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/" target="_blank">小技巧</a></div><div class="news_con"><p><strong>工具</strong>：腾讯云–云函数 （免费的额度就够用啦）</p>
+<p><strong>代码</strong>：一会会用到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf8 -*-</span><br><span class="line">import json</span><br><span class="line">import requests</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main_handler(event, context):</span><br><span class="line">    data &#x3D; &#123;</span><br><span class="line">        &#39;username&#39;: &#39;xxxxxxxxx&#39;, # 填写你的用户名</span><br><span class="line">        &#39;password&#39;: &#39;xxxxxxxxxx&#39;, # 填写你的密码</span><br><span class="line">        &#39;schoolid&#39;: &#39;&#39;, # 这个是学校id，学号登录才填写，手机登录空着就行</span><br><span class="line">        &#39;sckey&#39;: &#39;xxxxxxxxxxx&#39; # 如需签到消息微信推送，则填写server酱key</span><br><span class="line">    &#125;</span><br><span class="line">    r &#x3D; requests.post(&#39;http:&#x2F;&#x2F;101.89.182.58:9090&#x2F;sign&#39;, params&#x3D;data)</span><br><span class="line">    print(r.text)</span><br><span class="line">    return r.text</span><br></pre></td></tr></table></figure>
+
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>登录腾讯云，找到云函数项目</p>
+<p>直达链接 <a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/scf/list?rid=5&ns=default">https://console.cloud.tencent.com/scf/list?rid=5&amp;ns=default</a></p>
+<p>如果之前没有开通过，开通就行了，都是免费的</p>
+<h2 id="创建一个新的云函数"><a href="#创建一个新的云函数" class="headerlink" title="创建一个新的云函数"></a><strong>创建一个新的云函数</strong></h2><p>创建一个云函数， 选择<strong>香港节点</strong>，因为学习通屏蔽了腾讯阿里的ip运行环境 Python3.6，下一步填入Python代码删除其中所有的代码，换成咱们的代码。</p>
+<p>然后保存。</p>
+<h2 id="添加触发方式"><a href="#添加触发方式" class="headerlink" title="添加触发方式"></a>添加触发方式</h2><p>打开函数服务，找到刚才我们新建的云函数然后选择触发方式</p>
+<p>填写对应内容触发自定义周期，方便大家填写直接复制下面这个就行了</p>
+<p>0 */1 8-22 * * * * 表示每天 早上8点到晚上22点之间，每1分钟签到一次不建议30s签到一次，触发频率太高可能引起异常完成上述操作后，然后就可以全自动签到，但是签到成功与否，要么查看云函数执行函数，要么登录学习通，查看课程是否真的签到成功。</p>
+<blockquote>
+<p><strong>（附加功能）</strong></p>
+</blockquote>
+<h2 id="签到完成后微信推送消息"><a href="#签到完成后微信推送消息" class="headerlink" title="签到完成后微信推送消息"></a>签到完成后微信推送消息</h2><p>可以使用server酱，配合server酱，可以将签到消息，推送至你的微信。</p>
+<p>打开 server酱 <a target="_blank" rel="noopener" href="http://sc.ftqq.com/3.version">http://sc.ftqq.com/3.version</a></p>
+<p>登录需要github账户 自行注册</p>
+<p>绑定你的微信后 在发送消息页面会有 你的<a target="_blank" rel="noopener" href="http://sc.ftqq.com/?c=code">SCKEY</a> 将 <a target="_blank" rel="noopener" href="http://sc.ftqq.com/?c=code">SCKEY</a> 填到代码填写server酱key的那行就可以啦</p>
+</div></div><div class="nextinfo"><p>上一篇：<a href="/2020/05/19/%E5%88%A9%E7%94%A8%E5%90%BE%E7%88%B1%E5%A4%A7%E7%A5%9E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%A0%A1%E5%9B%AD%E5%8A%A9%E6%89%8B%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/">利用吾爱大神的软件实现校园助手自动打卡</a></p><p>下一篇：<a href="/2020/05/13/we-learn%E5%88%B7%E8%AF%BE/">we learn刷课</a></p></div><div class="news_pl"><div id="comment_container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<script src="/js/md5.min.js"></script>
+<script>const gitalk = new Gitalk({
+    clientID: 'you github Client ID',
+    clientSecret: 'you github Client Secret',
+    repo: 'you github repository',
+    owner: 'you github repository owner',
+    admin: ['you github repository owner'],
+    id: md5("2020/05/14/利用云函数实现定时自动学习通签到/"),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: true  // Facebook-like distraction free mode
+})
+gitalk.render('comment_container')</script></div></div></div></main><aside class="r_box"><div class="card box"><h2>我的名片</h2><div class="box_con"><p>名片：努力的Yong</p>
+<p>职业：无</p>
+<p>Email：771923501@qq.com</p>
+</div></div><div class="category box"><h2>文章分类</h2><div class="box_con"><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/uncategorized/">uncategorized</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a><span class="category-list-count">6</span></li></ul></div></div><div class="wechat box"><h2>我的微信</h2><div class="box_con"><img src="/images/wechat.png"></div></div></aside></article><footer><section class="footer_bottom"><div class="footer_container"><p class="copyright">Themes by
+<a href='https://github.com/homeant/hexo-theme-fun' target='_blank'>fun</a>
+</p><ul class="social_network"></ul></div></section></footer><div class="cd-top"><i class="iconfont icon-top"></i></div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/scrollreveal.js"></script>
+<script src="/js/hc-sticky.js"></script>
+<script src="/js/canvas-nest.js" type="text/javascript" color="47,135,193" opacity="0.7" zIndex="-2" count="199"></script><script src="https://cdn.bootcss.com/highlight.js/9.15.9/highlight.min.js"></script><script src="https://cdn.bootcss.com/highlight.js/9.15.9/languages/java.min.js"></script><script src="https://cdn.bootcss.com/highlight.js/9.15.9/languages/javascript.min.js"></script><script type="text/javascript">hljs.initHighlightingOnLoad();</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="/js/common.js?v=202010282206.js"></script>
+<script src="/js/index.js?v=202010282206.js"></script>
+</body></html>
