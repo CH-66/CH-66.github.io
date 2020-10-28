@@ -1,12 +1,221 @@
-<!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><title>利用云函数实现定时自动学习通签到</title><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1"><meta name="description" content="一个编程爱好者，喜欢python、JavaScript，C++,安卓逆向，前端开发的个人blog"><meta name="keywords"><meta name="author" content="努力的Yong"><link rel="short icon" href="/images/favicon.png"><link rel="icon" href="/images/favicon.png"><!--[if lt IE 9]>
-<script src="/js/modernizr.js"></script>
-<![endif]-->
-<link rel="stylesheet" href="/css/iconfont.css">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>利用云函数实现定时自动学习通签到 | 努力的Yong</title>
 
-<link rel="stylesheet" href="/css/index.css?v=202010282206.css">
-<link rel="stylesheet" href="/css/info.css?v=202010282206.css">
-<link href="https://cdn.bootcss.com/highlight.js/9.15.9/styles/github.min.css" rel="stylesheet"><meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="努力的Yong" type="application/atom+xml">
-</head><body><header id="header" class="header-navigation"><nav><div class="logo"><a href="http://xxslog.top">努力的Yong</a></div><h2 id="mnavh"><span class="navicon"></span></h2><ul id="starlist"><li><a href="/">首页</a></li><li><a href="/time.html">时间轴</a></li></ul><div class="searchbox"><div id="search_bar" class="search_bar"><input id="keyboard" placeholder="想搜点什么呢.." type="text" name="keyboard" autocomplete="off" class="input"><p class="search_ico"><span></span></p></div></div></nav></header><article><main><div class="con_warp"><div class="infosbox"><div class="newsview"><h3 class="news_title">利用云函数实现定时自动学习通签到</h3><div class="bloginfo"><ul><li class="author">作者：<a href="/">努力的Yong</a></li><li class="lmname"><a href="/">小技巧</a></li><li class="timer">时间：2020-05-14 15:10:58</li><li class="view"><span id="busuanzi_value_page_pv">99</span><span>次访问</span></li></ul></div><div class="tags"><a href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/" target="_blank">小技巧</a></div><div class="news_con"><p><strong>工具</strong>：腾讯云–云函数 （免费的额度就够用啦）</p>
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="工具：腾讯云–云函数 （免费的额度就够用啦） 代码：一会会用到 123456789101112131415# -*- coding: utf8 -*-import jsonimport requestsdef main_handler(event, context):    data &#x3D; &amp;#123;        &#39;username&#39;: &#39;xxxxxxxxx&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用云函数实现定时自动学习通签到">
+<meta property="og:url" content="http://xxslog.top/2020/05/14/%E5%88%A9%E7%94%A8%E4%BA%91%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E8%87%AA%E5%8A%A8%E5%AD%A6%E4%B9%A0%E9%80%9A%E7%AD%BE%E5%88%B0/index.html">
+<meta property="og:site_name" content="努力的Yong">
+<meta property="og:description" content="工具：腾讯云–云函数 （免费的额度就够用啦） 代码：一会会用到 123456789101112131415# -*- coding: utf8 -*-import jsonimport requestsdef main_handler(event, context):    data &#x3D; &amp;#123;        &#39;username&#39;: &#39;xxxxxxxxx&amp;#">
+<meta property="og:locale">
+<meta property="article:published_time" content="2020-05-14T07:10:58.000Z">
+<meta property="article:modified_time" content="2020-10-28T14:02:40.971Z">
+<meta property="article:author" content="努力的Yong">
+<meta property="article:tag" content="小技巧">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternative" href="/atom.xml" title="努力的Yong" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+
+  
+<script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+
+  
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+
+  
+<meta name="generator" content="Hexo 5.2.0"></head>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/"></a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/WEB/" style="font-size: 10px;">WEB</a> <a href="/tags/%E5%85%B6%E4%BB%96/" style="font-size: 10px;">其他</a> <a href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/" style="font-size: 20px;">小技巧</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide"></h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author"></h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-利用云函数实现定时自动学习通签到" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/05/14/%E5%88%A9%E7%94%A8%E4%BA%91%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E8%87%AA%E5%8A%A8%E5%AD%A6%E4%B9%A0%E9%80%9A%E7%AD%BE%E5%88%B0/" class="article-date">
+  	<time datetime="2020-05-14T07:10:58.000Z" itemprop="datePublished">2020-05-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      利用云函数实现定时自动学习通签到
+      
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/" rel="tag">小技巧</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a>
+	</div>
+
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>工具</strong>：腾讯云–云函数 （免费的额度就够用啦）</p>
 <p><strong>代码</strong>：一会会用到</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># -*- coding: utf8 -*-</span><br><span class="line">import json</span><br><span class="line">import requests</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main_handler(event, context):</span><br><span class="line">    data &#x3D; &#123;</span><br><span class="line">        &#39;username&#39;: &#39;xxxxxxxxx&#39;, # 填写你的用户名</span><br><span class="line">        &#39;password&#39;: &#39;xxxxxxxxxx&#39;, # 填写你的密码</span><br><span class="line">        &#39;schoolid&#39;: &#39;&#39;, # 这个是学校id，学号登录才填写，手机登录空着就行</span><br><span class="line">        &#39;sckey&#39;: &#39;xxxxxxxxxxx&#39; # 如需签到消息微信推送，则填写server酱key</span><br><span class="line">    &#125;</span><br><span class="line">    r &#x3D; requests.post(&#39;http:&#x2F;&#x2F;101.89.182.58:9090&#x2F;sign&#39;, params&#x3D;data)</span><br><span class="line">    print(r.text)</span><br><span class="line">    return r.text</span><br></pre></td></tr></table></figure>
 
@@ -25,31 +234,114 @@
 <p>打开 server酱 <a target="_blank" rel="noopener" href="http://sc.ftqq.com/3.version">http://sc.ftqq.com/3.version</a></p>
 <p>登录需要github账户 自行注册</p>
 <p>绑定你的微信后 在发送消息页面会有 你的<a target="_blank" rel="noopener" href="http://sc.ftqq.com/?c=code">SCKEY</a> 将 <a target="_blank" rel="noopener" href="http://sc.ftqq.com/?c=code">SCKEY</a> 填到代码填写server酱key的那行就可以啦</p>
-</div></div><div class="nextinfo"><p>上一篇：<a href="/2020/05/19/%E5%88%A9%E7%94%A8%E5%90%BE%E7%88%B1%E5%A4%A7%E7%A5%9E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%A0%A1%E5%9B%AD%E5%8A%A9%E6%89%8B%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/">利用吾爱大神的软件实现校园助手自动打卡</a></p><p>下一篇：<a href="/2020/05/13/we-learn%E5%88%B7%E8%AF%BE/">we learn刷课</a></p></div><div class="news_pl"><div id="comment_container"></div>
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/19/%E5%88%A9%E7%94%A8%E5%90%BE%E7%88%B1%E5%A4%A7%E7%A5%9E%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%9E%E7%8E%B0%E6%A0%A1%E5%9B%AD%E5%8A%A9%E6%89%8B%E8%87%AA%E5%8A%A8%E6%89%93%E5%8D%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          利用吾爱大神的软件实现校园助手自动打卡
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/13/we-learn%E5%88%B7%E8%AF%BE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">we learn刷课</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
 
-<script src="/js/md5.min.js"></script>
-<script>const gitalk = new Gitalk({
-    clientID: 'you github Client ID',
-    clientSecret: 'you github Client Secret',
-    repo: 'you github repository',
-    owner: 'you github repository owner',
-    admin: ['you github repository owner'],
-    id: md5("2020/05/14/利用云函数实现定时自动学习通签到/"),      // Ensure uniqueness and length less than 50
-    distractionFreeMode: true  // Facebook-like distraction free mode
-})
-gitalk.render('comment_container')</script></div></div></div></main><aside class="r_box"><div class="card box"><h2>我的名片</h2><div class="box_con"><p>名片：努力的Yong</p>
-<p>职业：无</p>
-<p>Email：771923501@qq.com</p>
-</div></div><div class="category box"><h2>文章分类</h2><div class="box_con"><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/uncategorized/">uncategorized</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a><span class="category-list-count">6</span></li></ul></div></div><div class="wechat box"><h2>我的微信</h2><div class="box_con"><img src="/images/wechat.png"></div></div></aside></article><footer><section class="footer_bottom"><div class="footer_container"><p class="copyright">Themes by
-<a href='https://github.com/homeant/hexo-theme-fun' target='_blank'>fun</a>
-</p><ul class="social_network"></ul></div></section></footer><div class="cd-top"><i class="iconfont icon-top"></i></div>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/scrollreveal.js"></script>
-<script src="/js/hc-sticky.js"></script>
-<script src="/js/canvas-nest.js" type="text/javascript" color="47,135,193" opacity="0.7" zIndex="-2" count="199"></script><script src="https://cdn.bootcss.com/highlight.js/9.15.9/highlight.min.js"></script><script src="https://cdn.bootcss.com/highlight.js/9.15.9/languages/java.min.js"></script><script src="https://cdn.bootcss.com/highlight.js/9.15.9/languages/javascript.min.js"></script><script type="text/javascript">hljs.initHighlightingOnLoad();</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<script src="/js/common.js?v=202010282206.js"></script>
-<script src="/js/index.js?v=202010282206.js"></script>
-</body></html>
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="利用云函数实现定时自动学习通签到" data-title="利用云函数实现定时自动学习通签到" data-url="http://xxslog.top/2020/05/14/%E5%88%A9%E7%94%A8%E4%BA%91%E5%87%BD%E6%95%B0%E5%AE%9E%E7%8E%B0%E5%AE%9A%E6%97%B6%E8%87%AA%E5%8A%A8%E5%AD%A6%E4%B9%A0%E9%80%9A%E7%AD%BE%E5%88%B0/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="利用云函数实现定时自动学习通签到">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2020 努力的Yong
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>
