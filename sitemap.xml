@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.zdreamy.top/2021/09/20/hello-world/</loc>
+    <loc>http://zdreamy.top/2021/09/20/hello-world/</loc>
     
     <lastmod>2021-09-20</lastmod>
     
@@ -10,8 +10,8 @@
   
 
   <url>
-    <loc>http://blog.zdreamy.top/</loc>
-    <lastmod>2021-09-21</lastmod>
+    <loc>http://zdreamy.top/</loc>
+    <lastmod>2021-09-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

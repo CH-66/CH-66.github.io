@@ -3,11 +3,11 @@
   <title>Yo记筑</title>
   
   <subtitle>正在成为程序员的大学生</subtitle>
-  <link href="http://blog.zdreamy.top/atom.xml" rel="self"/>
+  <link href="http://zdreamy.top/atom.xml" rel="self"/>
   
-  <link href="http://blog.zdreamy.top/"/>
+  <link href="http://zdreamy.top/"/>
   <updated>2021-09-20T12:53:46.022Z</updated>
-  <id>http://blog.zdreamy.top/</id>
+  <id>http://zdreamy.top/</id>
   
   <author>
     <name>Yong</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://blog.zdreamy.top/2021/09/20/hello-world/"/>
-    <id>http://blog.zdreamy.top/2021/09/20/hello-world/</id>
+    <link href="http://zdreamy.top/2021/09/20/hello-world/"/>
+    <id>http://zdreamy.top/2021/09/20/hello-world/</id>
     <published>2021-09-20T12:53:46.021Z</published>
     <updated>2021-09-20T12:53:46.022Z</updated>
     
