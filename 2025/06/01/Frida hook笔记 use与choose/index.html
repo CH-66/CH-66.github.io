@@ -4,14 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>EthanZhang&#39;s Blog</title>
+  <title>Frida hook笔记 use与choose | EthanZhang&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="EthanZhang&#39;s Blog">
-<meta property="og:url" content="https://ch-66.github.io/index.html">
+  <meta name="description" content="Java.use vs Java.chooseJava.use 和 Java.choose 是 Frida 中两个核心的 Java API，但它们的用途和工作方式截然不同： 1. Java.use：获取类引用（静态方式）功能 直接通过类名获取 Java 类的引用，用于 hook 类的方法 或 创建实例。 类似 Java 中的 Class.forName()，但功能更强大。  用法123456789">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Frida hook笔记 use与choose">
+<meta property="og:url" content="https://ch-66.github.io/2025/06/01/Frida%20hook%E7%AC%94%E8%AE%B0%20use%E4%B8%8Echoose/index.html">
 <meta property="og:site_name" content="EthanZhang&#39;s Blog">
+<meta property="og:description" content="Java.use vs Java.chooseJava.use 和 Java.choose 是 Frida 中两个核心的 Java API，但它们的用途和工作方式截然不同： 1. Java.use：获取类引用（静态方式）功能 直接通过类名获取 Java 类的引用，用于 hook 类的方法 或 创建实例。 类似 Java 中的 Class.forName()，但功能更强大。  用法123456789">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-06-01T12:00:00.000Z">
+<meta property="article:modified_time" content="2025-06-02T02:55:28.677Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="frida">
+<meta property="article:tag" content="hook">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="EthanZhang's Blog" type="application/atom+xml">
@@ -69,9 +75,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Frida hook笔记 use与choose" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Frida hook笔记 use与choose" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/06/01/Frida%20hook%E7%AC%94%E8%AE%B0%20use%E4%B8%8Echoose/" class="article-date">
   <time class="dt-published" datetime="2025-06-01T12:00:00.000Z" itemprop="datePublished">2025-06-01</time>
@@ -88,8 +92,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/06/01/Frida%20hook%E7%AC%94%E8%AE%B0%20use%E4%B8%8Echoose/">Frida hook笔记 use与choose</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Frida hook笔记 use与choose
     </h1>
   
 
@@ -178,139 +182,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-安卓模拟器安装使用frida" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/06/01/%E5%AE%89%E5%8D%93%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8frida/" class="article-date">
-  <time class="dt-published" datetime="2025-06-01T12:00:00.000Z" itemprop="datePublished">2025-06-01</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/frida/">frida</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/06/01/%E5%AE%89%E5%8D%93%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8frida/">安卓模拟器安装使用frida</a>
-    </h1>
+    <a href="/2025/06/01/%E5%AE%89%E5%8D%93%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8frida/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">安卓模拟器安装使用frida</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="安卓模拟器安装使用-frida"><a href="#安卓模拟器安装使用-frida" class="headerlink" title="安卓模拟器安装使用 frida"></a>安卓模拟器安装使用 frida</h1><h3 id="1-adb-与-frida-下载"><a href="#1-adb-与-frida-下载" class="headerlink" title="1.adb 与 frida 下载"></a>1.adb 与 frida 下载</h3><p>adb 下载网址：<a target="_blank" rel="noopener" href="https://adbdownload.com/">https://adbdownload.com/</a><br>frida 下载网址：<a target="_blank" rel="noopener" href="https://github.com/frida/frida/releases">https://github.com/frida/frida/releases</a></p>
-<h4 id="1-将-adb-解压出来的文件全部放到-mumu-模拟器下的-shell-文件夹中"><a href="#1-将-adb-解压出来的文件全部放到-mumu-模拟器下的-shell-文件夹中" class="headerlink" title="1) 将 adb 解压出来的文件全部放到 mumu 模拟器下的 shell 文件夹中"></a>1) 将 adb 解压出来的文件全部放到 mumu 模拟器下的 shell 文件夹中</h4><p>cmd 中运行连接模拟器(注意后面的 16384 为 mumu 模拟器的 adb 调试端口)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb.exe connect 127.0.0.1:16384</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="2-将下载的-frida-server-xx-xx-xx-android-x86-64-解压后放到-mumu-模拟器-shell-目录下"><a href="#2-将下载的-frida-server-xx-xx-xx-android-x86-64-解压后放到-mumu-模拟器-shell-目录下" class="headerlink" title="2) 将下载的 frida-server-xx.xx.xx-android-x86_64 解压后放到 mumu 模拟器 shell 目录下"></a>2) 将下载的 frida-server-xx.xx.xx-android-x86_64 解压后放到 mumu 模拟器 shell 目录下</h4><p>将 frida 上传到模拟器下的&#x2F;data&#x2F;local&#x2F;tmp 目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb.exe push frida-server-xx.0.11-android-x86_64 /data/local/tmp</span><br></pre></td></tr></table></figure>
-
-<p>利用 adb 中的 shell 连接上模拟器</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb.exe shell</span><br></pre></td></tr></table></figure>
-
-<p>提升到 root 权限，输入 su（注意 mumuMonique 输入 su 后会弹窗让你确认权限，一定要允许）</p>
-<p>先进入刚才上传的&#x2F;data&#x2F;local&#x2F;tmp 目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /data/local/tmp/</span><br></pre></td></tr></table></figure>
-
-<p>给 frida 执行权限</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 777 frida-server-xx.0.11-android-x86_64</span><br><span class="line">./frida-server-xx.0.11-android-x86_64</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-在使用-frida-工具前，需要在-python-中安装-frida"><a href="#2-在使用-frida-工具前，需要在-python-中安装-frida" class="headerlink" title="2.在使用 frida 工具前，需要在 python 中安装 frida"></a>2.在使用 frida 工具前，需要在 python 中安装 frida</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install frida</span><br><span class="line">pip install frida-tools</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-ADB-端口转发"><a href="#3-ADB-端口转发" class="headerlink" title="3. ADB 端口转发"></a>3. ADB 端口转发</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb.exe forward tcp:27043 tcp:27043</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-使用-frida"><a href="#4-使用-frida" class="headerlink" title="4.使用 frida"></a>4.使用 frida</h3><p>在 python 的安装了 frida 的虚拟环境的控制台中</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">frida-ps -U 查看正在运行进程</span><br><span class="line">frida-ps -Uai 列出安装的程序</span><br><span class="line">frida-ps -Ua 列出运行中的程序</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ch-66.github.io/2025/06/01/%E5%AE%89%E5%8D%93%E6%A8%A1%E6%8B%9F%E5%99%A8%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8frida/" data-id="cmbehzfqb000czgx57t65hegc" data-title="安卓模拟器安装使用frida" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/frida/" rel="tag">frida</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-关于ES遇到的坑" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/05/21/%E5%85%B3%E4%BA%8EES%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/" class="article-date">
-  <time class="dt-published" datetime="2025-05-21T12:00:00.000Z" itemprop="datePublished">2025-05-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/05/21/%E5%85%B3%E4%BA%8EES%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/">关于ES查询遇到的坑</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="1-ES中关于text类型的字段的精确（term）匹配"><a href="#1-ES中关于text类型的字段的精确（term）匹配" class="headerlink" title="1. ES中关于text类型的字段的精确（term）匹配"></a>1. ES中关于text类型的字段的精确（term）匹配</h2><p>索引中的某个字段的类型为text，并且使用了分词，那么想要进行term 匹配查询的时候，要使用<code>.keyword</code>子字段（前提是开启了多字段映射）</p>
-<p>如果你知道该字段在mapping中启用了<code>fields.keyword</code></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;term&quot;:&#123;&quot;name.keyword&quot;:&quot;zhangsan&quot;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="✅-使用term前的Checklist："><a href="#✅-使用term前的Checklist：" class="headerlink" title="✅ 使用term前的Checklist："></a>✅ 使用<code>term</code>前的Checklist：</h3><ul>
-<li>你是否理解这个字段是<code>text</code>还是<code>keyword</code>？</li>
-<li>如果是<code>text</code>，你是否想要的是“完整的字符串一致性”？</li>
-<li>你是否可以用<code>.keyword</code>字段替代？</li>
-<li>你是否需要token级别的精确查找（如某个词出现与否）？</li>
-</ul>
-<h2 id="2-ES组合查询的嵌套问题"><a href="#2-ES组合查询的嵌套问题" class="headerlink" title="2. ES组合查询的嵌套问题"></a>2. ES组合查询的嵌套问题</h2><h3 id="Elasticsearch组合查询基础：bool语义树"><a href="#Elasticsearch组合查询基础：bool语义树" class="headerlink" title="Elasticsearch组合查询基础：bool语义树"></a>Elasticsearch组合查询基础：<code>bool</code>语义树</h3><p>在ES中，组合查询最核心的语义结构是 <code>bool</code>：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">json复制编辑&#123;</span><br><span class="line">  &quot;bool&quot;: &#123;</span><br><span class="line">    &quot;must&quot;: [...],     // 类似 SQL 中的 AND</span><br><span class="line">    &quot;should&quot;: [...],   // 类似 SQL 中的 OR</span><br><span class="line">    &quot;must_not&quot;: [...], // 类似 SQL 中的 NOT</span><br><span class="line">    &quot;filter&quot;: [...]    // 类似 must，但不影响打分</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>每个字段都可以嵌套任意的<code>bool</code>，从而构建出“语法树”般的复杂查询结构：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">json复制编辑&#123;</span><br><span class="line">  &quot;bool&quot;: &#123;</span><br><span class="line">    &quot;must&quot;: [</span><br><span class="line">      &#123; &quot;match&quot;: &#123; &quot;title&quot;: &quot;Elasticsearch&quot; &#125;&#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        &quot;bool&quot;: &#123;</span><br><span class="line">          &quot;should&quot;: [</span><br><span class="line">            &#123; &quot;match&quot;: &#123; &quot;author&quot;: &quot;Peanut&quot; &#125;&#125;,</span><br><span class="line">            &#123; &quot;match&quot;: &#123; &quot;author&quot;: &quot;GPT&quot; &#125;&#125;</span><br><span class="line">          ],</span><br><span class="line">          &quot;must_not&quot;: [</span><br><span class="line">            &#123; &quot;term&quot;: &#123; &quot;status&quot;: &quot;draft&quot; &#125;&#125;</span><br><span class="line">          ]</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在这套系统中，<strong>查询的嵌套只是逻辑上的，不会自动处理文档结构的嵌套问题。</strong></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://ch-66.github.io/2025/05/21/%E5%85%B3%E4%BA%8EES%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/" data-id="cmbehzfps0000zgx5d0sg50t2" data-title="关于ES查询遇到的坑" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES/" rel="tag">ES</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
